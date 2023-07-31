@@ -1,0 +1,429 @@
+<<<<<<< HEAD
+header {
+    position: relative;
+    margin: 0 auto;
+}
+
+header nav {
+    position: relative;
+    margin: 0 auto;
+}
+
+.microsoft-logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > div {
+    position: absolute;
+    width: 95%;
+}
+
+.Hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: -3%;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+}
+
+.Hamburger-ul.on {
+    position: absolute;
+    display: flex;
+    width: calc(100vw - 20px);
+    /* width: 100vw; */
+    right: 0%;
+    top: 50px;
+    z-index: 100;
+    background: #F2F2F2;
+}
+
+.Hamburger-ul ul {
+    width: 100%;
+}
+
+.Hamburger-ul.on > ul > li, 
+.Hamburger-li-bt01,
+.Hamburger-li-bt02,
+.Hamburger-li-bt03,
+.Hamburger-li-bt04,
+.Hamburger-li-bt05,
+.Hamburger-li-bt06{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 15px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+
+
+/* 소프트웨어 */
+.Hamburger-ul.on > ul > li:nth-of-type(8),
+.Hamburger-ul.on > ul > li:nth-of-type(9),
+.Hamburger-ul.on > ul > li:nth-of-type(10),
+.Hamburger-ul.on > ul > li:nth-of-type(11),
+.Hamburger-ul.on > ul > li:nth-of-type(12),
+.Hamburger-ul.on > ul > li:nth-of-type(13) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.arrow-ul01 li:last-child,
+.arrow-ul02 li:last-child,
+.arrow-ul03 li:last-child,
+.arrow-ul04 li:last-child,
+.arrow-ul05 li:last-child,
+.arrow-ul06 li:last-child {
+    border-bottom: 0;
+}
+
+.Hamburger-li-bt01,
+.Hamburger-li-bt02,
+.Hamburger-li-bt03,
+.Hamburger-li-bt04,
+.Hamburger-li-bt05,
+.Hamburger-li-bt06 {
+    border: 0;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+
+.Hamburger-ul.on > ul > li {
+    padding-bottom: 14px;
+}
+
+.arrow-ul01,
+.arrow-ul02,
+.arrow-ul03,
+.arrow-ul04,
+.arrow-ul05,
+.arrow-ul06 {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+}   
+
+.arrow-ul01.on,
+.arrow-ul02.on,
+.arrow-ul03.on,
+.arrow-ul04.on,
+.arrow-ul05.on,
+.arrow-ul06.on {
+    display: flex;
+}
+
+.arrow-ul01 li,
+.arrow-ul02 li,
+.arrow-ul03 li,
+.arrow-ul04 li,
+.arrow-ul05 li,
+.arrow-ul06 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 15px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.arrow-ul01 > ul > li:last-child,
+.arrow-ul02 > ul > li:last-child,
+.arrow-ul03 > ul > li:last-child,
+.arrow-ul04 > ul > li:last-child,
+.arrow-ul05 > ul > li:last-child,
+.arrow-ul06 > ul > li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.Hamburger span {
+    width: 23px;
+    height: 1px;
+    background: #000;
+    margin: 2px 0;
+}
+
+.search {
+    position: absolute;
+    left: 4%;
+}
+
+.search img {
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.login {
+    position: absolute;
+    right: 1.5%;
+} 
+
+.cart {
+    position: absolute;
+    right: 11%;
+} 
+
+.cart img {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+header nav ul, .menu {
+    display: none;
+}
+
+.inner-C-wrap > div {
+    max-width: 100%;
+}
+
+.inner-C-wrap h2 {
+    margin-bottom: 0.5rem;
+}
+
+.inner-E-wrap > div > div {
+    max-width: 100%;
+}
+
+.inner-E-wrap > div > h2 {
+    margin-bottom: 0.5rem;
+}
+
+.nav01, .nav02 {
+    flex-wrap: wrap;
+}
+
+.footer-div ul {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+=======
+header {
+    position: relative;
+    margin: 0 auto;
+}
+
+header nav {
+    position: relative;
+    margin: 0 auto;
+}
+
+.microsoft-logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > div {
+    position: absolute;
+    width: 95%;
+}
+
+.Hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: -3%;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+}
+
+.Hamburger-ul.on {
+    position: absolute;
+    display: flex;
+    width: calc(100vw - 20px);
+    /* width: 100vw; */
+    right: 0%;
+    top: 50px;
+    z-index: 100;
+    background: #F2F2F2;
+}
+
+.Hamburger-ul ul {
+    width: 100%;
+}
+
+.Hamburger-ul.on > ul > li, 
+.Hamburger-li-bt01,
+.Hamburger-li-bt02,
+.Hamburger-li-bt03,
+.Hamburger-li-bt04,
+.Hamburger-li-bt05,
+.Hamburger-li-bt06{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 15px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+
+
+/* 소프트웨어 */
+.Hamburger-ul.on > ul > li:nth-of-type(8),
+.Hamburger-ul.on > ul > li:nth-of-type(9),
+.Hamburger-ul.on > ul > li:nth-of-type(10),
+.Hamburger-ul.on > ul > li:nth-of-type(11),
+.Hamburger-ul.on > ul > li:nth-of-type(12),
+.Hamburger-ul.on > ul > li:nth-of-type(13) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.arrow-ul01 li:last-child,
+.arrow-ul02 li:last-child,
+.arrow-ul03 li:last-child,
+.arrow-ul04 li:last-child,
+.arrow-ul05 li:last-child,
+.arrow-ul06 li:last-child {
+    border-bottom: 0;
+}
+
+.Hamburger-li-bt01,
+.Hamburger-li-bt02,
+.Hamburger-li-bt03,
+.Hamburger-li-bt04,
+.Hamburger-li-bt05,
+.Hamburger-li-bt06 {
+    border: 0;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+
+.Hamburger-ul.on > ul > li {
+    padding-bottom: 14px;
+}
+
+.arrow-ul01,
+.arrow-ul02,
+.arrow-ul03,
+.arrow-ul04,
+.arrow-ul05,
+.arrow-ul06 {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+}   
+
+.arrow-ul01.on,
+.arrow-ul02.on,
+.arrow-ul03.on,
+.arrow-ul04.on,
+.arrow-ul05.on,
+.arrow-ul06.on {
+    display: flex;
+}
+
+.arrow-ul01 li,
+.arrow-ul02 li,
+.arrow-ul03 li,
+.arrow-ul04 li,
+.arrow-ul05 li,
+.arrow-ul06 li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px 15px 15px;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.arrow-ul01 > ul > li:last-child,
+.arrow-ul02 > ul > li:last-child,
+.arrow-ul03 > ul > li:last-child,
+.arrow-ul04 > ul > li:last-child,
+.arrow-ul05 > ul > li:last-child,
+.arrow-ul06 > ul > li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.Hamburger span {
+    width: 23px;
+    height: 1px;
+    background: #000;
+    margin: 2px 0;
+}
+
+.search {
+    position: absolute;
+    left: 4%;
+}
+
+.search img {
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.login {
+    position: absolute;
+    right: 1.5%;
+} 
+
+.cart {
+    position: absolute;
+    right: 11%;
+} 
+
+.cart img {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+header nav ul, .menu {
+    display: none;
+}
+
+.inner-C-wrap > div {
+    max-width: 100%;
+}
+
+.inner-C-wrap h2 {
+    margin-bottom: 0.5rem;
+}
+
+.inner-E-wrap > div > div {
+    max-width: 100%;
+}
+
+.inner-E-wrap > div > h2 {
+    margin-bottom: 0.5rem;
+}
+
+.nav01, .nav02 {
+    flex-wrap: wrap;
+}
+
+.footer-div ul {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+>>>>>>> 4825fc604952e9db9288ce656ffdeaf8a59a8e7a

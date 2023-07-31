@@ -1,0 +1,156 @@
+<<<<<<< HEAD
+.main-text {
+    margin: 40px 20px;
+}
+
+.main-text h1 {
+    font-size: 25px;
+}
+
+.main-text h1 span {
+    font-size: 35px;
+}
+
+.main-text p {
+    font-size: 17px;
+    margin: 20px 0 8px 0;
+}
+
+.a-wrap a:nth-of-type(1),
+.a-wrap a:nth-of-type(2) {
+    font-size: 18px;
+}
+
+.sub h2, .end h2 {
+    font-size: 19px;
+}
+
+.end h3 {
+    font-size: 30px;
+}
+
+.sub p, .end p {
+    font-size: 17px;
+}
+
+.end {
+    padding: 43px 24px 13px 24px;
+}
+
+.sub:nth-of-type(2), .sub:nth-of-type(4) {
+    min-height: 407px;
+}
+
+.sub div > img {
+    margin-top: 24px;
+}
+
+.sub {
+    padding: 63px 24px 56px 24px;
+}
+
+footer .inner {
+    gap: 5px;
+}
+
+footer .inner:nth-of-type(1) {
+    margin: 0;
+    padding: 80px 22px 0 22px;
+    border-bottom: 1px solid #5865f2;
+    margin: 0 20px;
+}
+
+footer .inner:nth-of-type(2) a:nth-of-type(2) {
+    margin-right: 0;
+}
+
+.footer-a {
+    text-align: start;
+}
+
+/* .footer-a div {
+    max-width: 120px;
+    margin-right: 30px;
+} */
+
+footer .inner .logo {
+    margin-left: 0;
+=======
+.main-text {
+    margin: 40px 20px;
+}
+
+.main-text h1 {
+    font-size: 25px;
+}
+
+.main-text h1 span {
+    font-size: 35px;
+}
+
+.main-text p {
+    font-size: 17px;
+    margin: 20px 0 8px 0;
+}
+
+.a-wrap a:nth-of-type(1),
+.a-wrap a:nth-of-type(2) {
+    font-size: 18px;
+}
+
+.sub h2, .end h2 {
+    font-size: 19px;
+}
+
+.end h3 {
+    font-size: 30px;
+}
+
+.sub p, .end p {
+    font-size: 17px;
+}
+
+.end {
+    padding: 43px 24px 13px 24px;
+}
+
+.sub:nth-of-type(2), .sub:nth-of-type(4) {
+    min-height: 407px;
+}
+
+.sub div > img {
+    margin-top: 24px;
+}
+
+.sub {
+    padding: 63px 24px 56px 24px;
+}
+
+footer .inner {
+    gap: 5px;
+}
+
+footer .inner:nth-of-type(1) {
+    margin: 0;
+    padding: 80px 22px 0 22px;
+    border-bottom: 1px solid #5865f2;
+    margin: 0 20px;
+}
+
+footer .inner:nth-of-type(2) a:nth-of-type(2) {
+    margin-right: 0;
+}
+
+.footer-a {
+    text-align: start;
+}
+
+/* .footer-a div {
+    max-width: 120px;
+    margin-right: 30px;
+} */
+
+footer .inner .logo {
+    margin-left: 0;
+>>>>>>> 4825fc604952e9db9288ce656ffdeaf8a59a8e7a
+}

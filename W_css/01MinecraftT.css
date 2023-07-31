@@ -1,9 +1,13 @@
-@charset "utf-8";
+<<<<<<< HEAD
+@charset "utf-8";pan
 
 /* 마크T */
 
 
-.inner { padding: 0 0 0 0;}
+.inner {
+    width: 100%;
+    padding: 0 0 0 0;
+}
 
 header {
     position: fixed;
@@ -22,26 +26,28 @@ nav {
     height: auto;
 }
 
-nav > ul {gap: 0;}
+.gloval.on {height: 160px;}
+.gloval02.on {height: 160px;}
+
+.gnbfamily {gap: 0;}
 
 .logo {
     background: var(--color1);
-    margin: 0 auto;
     position: absolute;
+    left: 35%;
     top:0;
     padding: 20px;
 }
 
 /* 이미지크기조절 */
 .logo img {
-    width: 35%;
-    height: 35%;
+    width: 80%;
+    height: 80%;
 }
 
 .login_start {
     display: flex;
     align-items: center;
-    z-index: 1;
     right: 0%;
 }
 
@@ -51,25 +57,56 @@ nav > ul {gap: 0;}
     z-index: 1;
     width: 66px;
     height: 79px;
-    background: url(/ex/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
+    background: url(/Woo_ang/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
     border: none;
 }
 
-.gamecard > .swiper-wrapper > .swiper-slide{align-items: center;}
-
-.art01 {padding: 200px 0 0 0;}
-
-.hamburger.on {
-    background: url(/ex/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover
-    ;
-    /* mix-blend-mode: multiply ; */
+.gamecard > .swiper-wrapper > .swiper-slide{
+    width: 100%;
 }
 
-/* 껏다켰다 */
-.gnb {
+.gamecard {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.gamecard .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.gamecard .swiper-pagination {
+    left: 30px;
+    bottom:30px
+}
+
+.gamecard .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gamecard > .swiper-wrapper > .swiper-slide > button{
+    height: 64px;
+    width: 146px;
+}
+
+.art01 {
     display: flex;
     flex-direction: column;
-    width: 260px;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 0 0 0;
+    overflow: hidden;
+}
+
+.hamburger.on {background: url(/Woo_ang/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover;}
+
+/* 온오프 */
+.gnbfamily {
+    display: flex;
+    flex-direction: column;
     height: 0;
     width: 0;
     overflow: hidden;
@@ -77,47 +114,330 @@ nav > ul {gap: 0;}
     position: absolute;
     top: 100%;
     background: #000;
+}
+
+/* 호버효과 삭제 */
+.gnbfamily li:hover .sub{display:unset}
+.gnbfamily .sub {display: unset;}
+/* 호버효과 재설정 */
+
+.gnbfamily .sub {transition: all 5s;}
+.gnbfamily .sub li:hover {background: rgba(255, 255, 255, 0.2);}
+
+.gnbfamily .sub li {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gnbfamily .sub li.on {
+    display: flex;
+    height: auto;
+}
+
+.gnbfamily li .sub {
+    top: 5px;
+    position: relative;
+}
+
+.gnbfamily.on {
+    height: auto;
+    width: 260px;
     transition: all 0.5s;
 }
 
-.gnb.on {
-    display: flex;
-    height: 168px;
-    width: 260px;
-}
-/*  */
-
-.gnb li {
+.gnbfamily > li {
     text-align: start;
     width: 100%;
     border-bottom: 2px solid white;
-    padding: 5px 0px 5px 10px;
+    padding: 5px 0px;
 }
 
-.gnb:last-child {border-bottom: none;}
+/* 로그인 스타트 gnbF안에 있을 떄*/
+nav .login_start {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0px 30px 0px 0px;
+}
 
-.gnb button {padding: 2px 0px;}
+/*  */
+.gnbfamily:last-child {border-bottom: none;}
 
-.News .swiper-button-next {right: 29%;}
-.News .swiper-button-prev {left: 29%;}
+.gnbfamily button {padding: 2px 0px;}
+
+.News .swiper-slide img {
+    width: 100%;
+    height: 230px;
+}
+
+.gamecard > .swiper-button-next {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    right: 9%;
+    width: 74px;
+    height: 74px;
+}
+
+.gamecard > .swiper-button-prev {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    left:9%;
+    width: 74px;
+    height: 74px;
+}
+
+.News .swiper-slide > span {
+    width: 130px;
+    height: 50px;
+    position: relative;
+    Top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.News .swiper-button-next {right: 28.5%;}
+.News .swiper-button-prev {left: 28.5%;}
 
 .inner600a {
     width: auto;
-    padding: 0 10px 0 10px;
+    padding: 0 35px;
 }
 
 .inner600b {
-    width: 38%;
+    width: 500px;
     justify-content: center;
+    padding: 0;
 }
 
 .hotbox {gap: 30px;}
 
 .box03 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
 }
+.box03-2{margin: 0 100px}
+=======
+@charset "utf-8";pan
 
-.box03-2{margin: 0 auto;}
-    
+/* 마크T */
+
+
+.inner {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+header {
+    position: fixed;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+section {
+    padding: 180px 0 0 0;
+}
+
+nav {
+    position: relative;
+    padding: 80px 0 0 0;
+    justify-content: space-between;
+    height: auto;
+}
+
+.gloval.on {height: 160px;}
+.gloval02.on {height: 160px;}
+
+.gnbfamily {gap: 0;}
+
+.logo {
+    background: var(--color1);
+    position: absolute;
+    left: 35%;
+    top:0;
+    padding: 20px;
+}
+
+/* 이미지크기조절 */
+.logo img {
+    width: 80%;
+    height: 80%;
+}
+
+.login_start {
+    display: flex;
+    align-items: center;
+    right: 0%;
+}
+
+.hamburger {
+    display: block;
+    margin: 0 0 0 20px;
+    z-index: 1;
+    width: 66px;
+    height: 79px;
+    background: url(/Woo_ang/w_images/01minecraft/hamburger-icon.png) no-repeat 50% 50% / cover ;
+    border: none;
+}
+
+.gamecard > .swiper-wrapper > .swiper-slide{
+    width: 100%;
+}
+
+.gamecard {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.gamecard .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.gamecard .swiper-pagination {
+    left: 30px;
+    bottom:30px
+}
+
+.gamecard .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gamecard > .swiper-wrapper > .swiper-slide > button{
+    height: 64px;
+    width: 146px;
+}
+
+.art01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px 0 0 0;
+    overflow: hidden;
+}
+
+.hamburger.on {background: url(/Woo_ang/w_images/01minecraft/hamburger-closeicon.png)  no-repeat 50% 50% / cover;}
+
+/* 온오프 */
+.gnbfamily {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    padding-left: 0;
+    position: absolute;
+    top: 100%;
+    background: #000;
+}
+
+/* 호버효과 삭제 */
+.gnbfamily li:hover .sub{display:unset}
+.gnbfamily .sub {display: unset;}
+/* 호버효과 재설정 */
+
+.gnbfamily .sub {transition: all 5s;}
+.gnbfamily .sub li:hover {background: rgba(255, 255, 255, 0.2);}
+
+.gnbfamily .sub li {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.gnbfamily .sub li.on {
+    display: flex;
+    height: auto;
+}
+
+.gnbfamily li .sub {
+    top: 5px;
+    position: relative;
+}
+
+.gnbfamily.on {
+    height: auto;
+    width: 260px;
+    transition: all 0.5s;
+}
+
+.gnbfamily > li {
+    text-align: start;
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding: 5px 0px;
+}
+
+/* 로그인 스타트 gnbF안에 있을 떄*/
+nav .login_start {
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0px 30px 0px 0px;
+}
+
+/*  */
+.gnbfamily:last-child {border-bottom: none;}
+
+.gnbfamily button {padding: 2px 0px;}
+
+.News .swiper-slide img {
+    width: 100%;
+    height: 230px;
+}
+
+.gamecard > .swiper-button-next {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    right: 9%;
+    width: 74px;
+    height: 74px;
+}
+
+.gamecard > .swiper-button-prev {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    left:9%;
+    width: 74px;
+    height: 74px;
+}
+
+.News .swiper-slide > span {
+    width: 130px;
+    height: 50px;
+    position: relative;
+    Top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.News .swiper-button-next {right: 28.5%;}
+.News .swiper-button-prev {left: 28.5%;}
+
+.inner600a {
+    width: auto;
+    padding: 0 35px;
+}
+
+.inner600b {
+    width: 500px;
+    justify-content: center;
+    padding: 0;
+}
+
+.hotbox {gap: 30px;}
+
+.box03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+}
+.box03-2{margin: 0 100px}
+>>>>>>> 4825fc604952e9db9288ce656ffdeaf8a59a8e7a

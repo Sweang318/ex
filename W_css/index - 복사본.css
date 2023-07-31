@@ -1,0 +1,630 @@
+<<<<<<< HEAD
+@charset "utf-8";
+@import 'animate.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    /* outline: 1px solid rgb(200, 185, 214); */
+}
+
+h2 {display: none;}
+
+.IndexSwiper {width: 100vw; height: 100vh;}
+
+.swiper-slide {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    background: rgb(200, 185, 214);
+}
+
+.intro {
+  display: flex;
+  flex-flow: row wrap ;
+  align-content: flex-start;
+  width: 800px; 
+  height: 800px;
+  /* gap: 35px; */
+}
+
+.swiper-slide.introwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt {
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  left: 72%;
+  top: 73%;
+  z-index: 100;
+  border-radius: 100px;
+  background-color: aqua;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt:hover {background: yellowgreen; transition: all 0.3s;}
+
+/* 뒤에 글씨 */
+.실험 { position: absolute; font-size: 155px; z-index: -1;}
+/* .실험2 { position: absolute; font-size: 155px; z-index: -1;} */
+
+  .square1 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.1s;
+  }
+  .square2 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+  .square3 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square3 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square4 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square5 {width: 100px; height: 100px; background: rgb(153, 51, 148);}
+  .square6 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square7 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square8 {width: 100px; height: 100px; background: rgb(146, 153, 51);}
+  .square9 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+  .square10 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square11 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both; animation-delay: 0.4s;
+}
+  .square12 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square13 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square14 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square15 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square16 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square17 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square18 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square19 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square20 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square21 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square22 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square23 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square24 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square25 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square26 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square27 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square28 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square29 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square30 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square31 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square32 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square33 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square34 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square35 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square36 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square37 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.7s;
+  }
+  .square38 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square39 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square40 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square41 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square42 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square43 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square44 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square45 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square46 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square47 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square48 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square49 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square50 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square51 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square52 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square53 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square54 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square55 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square56 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square57 {width: 100px; height: 100px; background: rgb(51, 153, 65);}
+  .square58 {width: 100px; height: 100px; background: rgb(153, 51, 148);}
+  .square59 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square60 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square61 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square62 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square63 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square64 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+
+  /* .square1{
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.1s;
+  }
+  .square2 {
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  } */
+
+/* 대각선 뒤집기 왼 -> 오 - >왼*/
+  @keyframes flip-scale-up-diag-2 {
+    0% {transform: scale(1) rotate3d(-1, 1, 0, 0deg);}
+    25% {transform: scale(1) rotate3d(-1, 1, 0, 90deg);}
+    50% {transform: scale(1) rotate3d(-1, 1, 0, 180deg);}
+    /* 75% {opacity: 1;} */
+    100% { opacity: 0; font-size: 0; transition: all;}
+  }
+
+/* 사라지기 */
+  @keyframes fadein {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+=======
+@charset "utf-8";
+@import 'animate.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    /* outline: 1px solid rgb(200, 185, 214); */
+}
+
+h2 {display: none;}
+
+.IndexSwiper {width: 100vw; height: 100vh;}
+
+.swiper-slide {
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    background: rgb(200, 185, 214);
+}
+
+.intro {
+  display: flex;
+  flex-flow: row wrap ;
+  align-content: flex-start;
+  width: 800px; 
+  height: 800px;
+  /* gap: 35px; */
+}
+
+.swiper-slide.introwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt {
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  left: 72%;
+  top: 73%;
+  z-index: 100;
+  border-radius: 100px;
+  background-color: aqua;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt:hover {background: yellowgreen; transition: all 0.3s;}
+
+/* 뒤에 글씨 */
+.실험 { position: absolute; font-size: 155px; z-index: -1;}
+/* .실험2 { position: absolute; font-size: 155px; z-index: -1;} */
+
+  .square1 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.1s;
+  }
+  .square2 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+  .square3 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square3 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square4 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square5 {width: 100px; height: 100px; background: rgb(153, 51, 148);}
+  .square6 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square7 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square8 {width: 100px; height: 100px; background: rgb(146, 153, 51);}
+  .square9 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+  .square10 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square11 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both; animation-delay: 0.4s;
+}
+  .square12 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square13 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square14 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square15 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square16 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square17 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square18 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square19 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square20 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square21 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square22 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square23 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square24 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square25 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square26 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square27 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square28 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square29 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square30 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square31 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square32 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square33 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square34 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square35 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square36 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.6s;
+  }
+  .square37 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.7s;
+  }
+  .square38 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square39 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square40 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square41 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square42 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square43 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square44 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square45 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square46 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.8s;
+  }
+  .square47 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square48 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square49 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square50 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square51 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square52 {width: 100px; height: 100px; background: rgb(58, 51, 153);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square53 {width: 100px; height: 100px; background: rgb(153, 51, 148);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 1s;
+  }
+  .square54 {width: 100px; height: 100px; background: rgb(153, 51, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square55 {width: 100px; height: 100px; background: rgb(153, 105, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square56 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square57 {width: 100px; height: 100px; background: rgb(51, 153, 65);}
+  .square58 {width: 100px; height: 100px; background: rgb(153, 51, 148);}
+  .square59 {width: 100px; height: 100px; background: rgb(153, 51, 51);}
+  .square60 {width: 100px; height: 100px; background: rgb(153, 105, 51);}
+  .square61 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.5s;
+  }
+  .square62 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.4s;
+  }
+  .square63 {width: 100px; height: 100px; background: rgb(146, 153, 51);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.3s;
+  }
+  .square64 {width: 100px; height: 100px; background: rgb(51, 153, 65);
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+  }
+
+  /* .square1{
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.1s;
+  }
+  .square2 {
+    animation: flip-scale-up-diag-2 0.4s linear both;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  } */
+
+/* 대각선 뒤집기 왼 -> 오 - >왼*/
+  @keyframes flip-scale-up-diag-2 {
+    0% {transform: scale(1) rotate3d(-1, 1, 0, 0deg);}
+    25% {transform: scale(1) rotate3d(-1, 1, 0, 90deg);}
+    50% {transform: scale(1) rotate3d(-1, 1, 0, 180deg);}
+    /* 75% {opacity: 1;} */
+    100% { opacity: 0; font-size: 0; transition: all;}
+  }
+
+/* 사라지기 */
+  @keyframes fadein {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+>>>>>>> 4825fc604952e9db9288ce656ffdeaf8a59a8e7a
+    

@@ -1,9 +1,9 @@
+<<<<<<< HEAD
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* Noto Sans KR 폰트 */
 @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
 /* @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'); */
-
 
 * {
     box-sizing: border-box;
@@ -18,10 +18,10 @@
     font-family: 'Noto Sans KR', sans-serif;
     --colorWhite: #fff;
     --colorBlack: #000;
-    --color1:rgba(23, 22, 21, 1);
-    --color1-1:rgba(42, 40, 38, 1);
-    --color1-2:rgba(74, 74, 74, 1);
-    --color2:rgba(59, 133, 38, 1);
+    --color1: rgba(23, 22, 21, 1);
+    --color1-1: rgba(42, 40, 38, 1);
+    --color1-2: rgba(74, 74, 74, 1);
+    --color2: rgba(59, 133, 38, 1);
     --color3: rgba(107, 195, 73, 1);
 }
 
@@ -35,15 +35,20 @@
     border: none;
     width: 50px;
     height: 50px;
-    background: url(/ex/w_images/01minecraft/scrollTopbt.png) no-repeat 50% 50% / 35px 35px;
+    background: url(/Woo_ang/w_images/01minecraft/scrollTopbt.png) no-repeat 50% 50% / 35px 35px;
 }
 
-.scrollTopbt.on {display: flex;}
+/* .scrollTopbt.on {
+    display: flex;
+} */
 
-.scrollTopbt:hover {border: 2px solid var(--colorWhite);}
+.scrollTopbt:hover {
+    border: 2px solid var(--colorWhite);
+}
 
 .inner {
     width: 100%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -55,15 +60,23 @@
 .inner-up {
     height: 125px;
     width: 100%;
-    background: url(/ex/w_images/01minecraft/배경위.png) repeat;}
+    background: url(/Woo_ang/w_images/01minecraft/배경위.png) repeat;
+}
 .inner-down {
-     height: 120px;
-      width: 100%;
-     background: url(/ex/w_images/01minecraft/배경아래.png) repeat;}    
+    height: 120px;
+    width: 100%;
+    background: url(/Woo_ang/w_images/01minecraft/배경아래.png) repeat;
+}
 
-section {flex-direction: column;}
-header {flex-direction: column;}
-footer {flex-direction: column;}
+section {
+    flex-direction: column;
+}
+header {
+    flex-direction: column;
+}
+footer {
+    flex-direction: column;
+}
 
 .hamburger {
     background-repeat: no-repeat;
@@ -72,31 +85,55 @@ footer {flex-direction: column;}
     display: none;
 }
 
-li {list-style: none;}
-
-a:link {color: #fff;}
-a:visited {color: #fff;}
-a:active {color: #6BC349;}
-a:hover {color: #6BC349;}
-
-a:link,
-a:visited {text-decoration: none;}
-
-h5 {font-size: 15px;}
-
-.Languages {
-    background: transparent;
-    border: none;
-    color:#fff
+li {
+    list-style: none;
 }
 
-.h1-1 > .Languages{
+a:link {
+    color: #fff;
+}
+a:visited {
+    color: #fff;
+}
+a:active {
+    color: #6BC349;
+}
+a:hover {
+    color: #6BC349;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.Languages, .Languages02 {
+    background: transparent;
+    border: none;
+    color: #fff
+}
+
+.h1-1 > .Languages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Languages02 {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.Languages i {font-size: 25px;}
+.Languages i {
+    font-size: 25px;
+}
+.Languages02 i {
+    font-size: 25px;
+}
 
 /* 바닥에서 위로 나올 거기 때문에 바텀0
     left= xy값
@@ -106,40 +143,78 @@ h5 {font-size: 15px;}
     글로벌 높이값 안보이게 처리
 */
 
-.gloval {
+.gloval, .gloval02 {
     display: flex;
     width: 100%;
     position: relative;
     bottom: 0;
     left: 0;
     justify-content: center;
-    background: var(--color1-2); 
+    background: var(--color1-2);
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
 }
 
 /* 글로벌on일 때 높이 값을 갖는다. */
-.gloval.on {height: 120px;}
+.gloval.on {
+    height: 140px;
+}
+.gloval02.on {
+    height: 140px;
+}
 
-.Languages:hover {color: #6BC349;}
-.Languages:hover .gloval {display: flex;}
+
+.Languages:hover {
+    color: #6BC349;
+}
+.Languages:hover .gloval {
+    display: flex;
+}
+.Languages02:hover {
+    color: #6BC349;
+}
+.Languages02:hover .gloval {
+    display: flex;
+}
 
 .gloval ul {
-    width: 1000px;
-    height: 100px;
+    width: 850px;
+    height: auto;
     gap: 5px;
+    padding: 0 50px 0 100px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: start;
     margin: 20px 0;
-    padding: 0 0 20px 0;
+}
+.gloval02 ul {
+    width: 850px;
+    height: auto;
+    gap: 5px;
+    padding: 0 50px 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 20px 0;
+}
+
+.gloval li {
+    gap: 5px;
+    width: 100px;
+    height: 21px;
+}
+.gloval02 li {
+    gap: 5px;
+    width: 100px;
+    height: 21px;
 }
 
 
 /* 게임 나브부분 */
-.h1-1 { 
+.h1-1 {
     display: flex;
     width: 100%;
     align-items: center;
@@ -148,10 +223,18 @@ h5 {font-size: 15px;}
     gap: 50px;
 }
 
-.h1-1 a:link {color: var(--color2);}
-.h1-1 a:visited {color: var(--color2);}
-.h1-1 a:active {color: var(--colorWhite);}
-.h1-1 a:hover {color: var(--colorWhite);} 
+.h1-1 a:link {
+    color: var(--color2);
+}
+.h1-1 a:visited {
+    color: var(--color2);
+}
+.h1-1 a:active {
+    color: var(--colorWhite);
+}
+.h1-1 a:hover {
+    color: var(--colorWhite);
+}
 
 nav {
     display: flex;
@@ -162,69 +245,69 @@ nav {
     background: var(--color1);
 }
 
-nav > ul {
+.gnbfamily {
+    display: flex;
     width: 480px;
     height: 100%;
     gap: 35px;
     align-items: center;
     padding: 0 0 0 30px;
+    left: 0;
 }
 
-.gnb li button {
+.gnbfamily li button {
     border: 0;
     color: #fff;
     background-color: transparent;
     font-size: 15px;
 }
 
+.gnbfamily li button:hover {
+    color: var(--color3);
+}
 
-.gnb li button:hover {color: var(--color3);}
-
-.gnb li .sub {
-    display: flex;
-    flex-direction:column;
+.gnbfamily .sub {
+    /* display: flex; */
+    flex-direction: column;
     position: absolute;
     z-index: 2;
     text-align: start;
     background: var(--color1-1);
     transition: all 0.2s;
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.3);
-}
-
-.gnb li .sub {opacity: 0;}
-
-.gnb .sub li {padding: 15px;}
-
-.gnb .sub li:hover { background: rgba(255, 255, 255, 0.15);}
-
-/* li를 호버하면 a 는 초록색 */
-.gnb li:hover > a {color: #6BC349;}
-
-.gnb li:hover .sub {opacity: 1;}
-
-.gnb {display: flex;}
-
-.gnb .sub {
-    height: 0; /*ul(gnb)의 높이 안보이게 처리*/
+    height: 0;
+    /*ul(gnb)의 높이 안보이게 처리*/
     overflow: hidden;
 }
+/* tlfgja */
 
-.gnb  li:hover .sub {
-    height: 207px;
-    transition: all 0.4s;}
+.gnbfamily .sub li {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
 
+.gnbfamily .sub li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
 
-nav a > img {
-    width: 235px;
-    height: 100%;                                                                                                                                                                                                                                                                                                                                          
+/* li를 호버하면 a 는 초록색 */
+.gnbfamily li:hover > a {
+    color: #6BC349;
+}
+
+.gnbfamily li:hover .sub {
+    height: 204px;
+    width: 260px;
+    transition: all 0.4s;
 }
 
 .logo {
     display: flex;
     justify-content: center;
 }
-/* 여기 */
-nav > div{
+
+nav .login_start {
     width: 480px;
     display: flex;
     justify-content: flex-end;
@@ -233,10 +316,12 @@ nav > div{
 }
 
 /* 1-1 게임 배너 부분 */
+/* 230227 */
 .start {
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 80px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     line-height: 24px;
@@ -245,8 +330,8 @@ nav > div{
     font-weight: 400;
 }
 
-.gnb li > button {
-    display: flex;
+.gnb ul button {
+    /* display: flex; */
     flex-direction: row;
     gap: 5px;
 }
@@ -287,12 +372,21 @@ nav > div{
     height: 32px;
     display: flex;
     align-items: end;
-    justify-content: center;   
+    justify-content: center;
 }
 
 .gamecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     width: 1200px;
     height: 600px;
+    overflow: hidden;
+}
+
+.art01 {
+    height: auto;
 }
 
 .pickcard {
@@ -307,9 +401,12 @@ nav > div{
 .pickcard .swiper-pagination {
     position: relative;
     top: -2px;
+    /* margin: 1px; */
 }
 
-.pickcard h2  {margin: 30px 0 5px 0}
+.pickcard h2 {
+    margin: 30px 0 5px 0
+}
 
 
 .pickcard img {
@@ -342,12 +439,12 @@ nav > div{
     color: var(--colorWhite);
     font-size: 20px;
     font-weight: 700;
-    background: url(/ex/w_images/01minecraft/초록버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+    background: url(/Woo_ang/w_images/01minecraft/초록버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
 }
 
 .inner1200 button:hover {
     border: 0px;
-    background: url(/ex/w_images/01minecraft/검정버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+    background: url(/Woo_ang/w_images/01minecraft/검정버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
     transition: all 0.3s;
     border: 2px solid var(--colorWhite);
 }
@@ -360,47 +457,60 @@ nav > div{
 
 
 /* 게임카드버튼호버 */
-.gamecard > .swiper-button-next::after {display: none;}
+
+.gamecard > .swiper-button-next::after {
+    display: none;
+}
+
 .gamecard > .swiper-button-next {
-    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    right: 9%;
     width: 74px;
     height: 74px;
 }
 .gamecard > .swiper-button-next:hover {
-    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
+    position: absolute;
+    right: 9%;
 }
 
-.gamecard > .swiper-button-prev::after {display: none;}
+.gamecard > .swiper-button-prev::after {
+    display: none;
+}
+
 .gamecard > .swiper-button-prev {
-    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    left: 9%;
     width: 74px;
     height: 74px;
 }
 .gamecard > .swiper-button-prev:hover {
-    background: url(/ex/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
+    position: absolute;
+    left: 9%;
 }
 
 .gamecard > .swiper-wrapper {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
-
-.gamecard > .swiper-wrapper > .swiper-slide {
-    display: flex;
-    flex-direction: column;
-}
-
-.gamecard > .swiper-wrapper > .swiper-slide > button{
+.gamecard > .swiper-wrapper > .swiper-slide > button {
     position: absolute;
+    z-index: 22;
     height: 74px;
     width: 156px;
-    left: 522px;
-    top: 506px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
     margin: 0px;
     border: 0;
     font-weight: 700;
@@ -409,12 +519,14 @@ nav > div{
     color: #fff;
 }
 
-.gamecard > .swiper-wrapper > .swiper-slide > button:hover{
+.gamecard > .swiper-wrapper > .swiper-slide > button:hover {
     position: absolute;
+    z-index: 22;
     height: 74px;
     width: 156px;
-    left: 522px;
-    top: 506px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
     margin: 0px;
     border: 0;
     font-weight: 700;
@@ -427,6 +539,9 @@ nav > div{
 
 .gamecard .swiper-pagination {
     display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
     justify-content: center;
     align-items: center;
     width: 115px;
@@ -434,20 +549,19 @@ nav > div{
     gap: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    position: absolute;
-    left: 20px;
-    top: 546px;
 }
 
 /* 최신소식 */
 .inner1200 {
     width: 1200px;
+    height: auto;
     display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     padding: 20px 0;
-    background: url(/ex/w_images/01minecraft/배경흰색-수정.png);
+    background: url(/Woo_ang/w_images/01minecraft/배경흰색-수정.png);
 }
 
 .innerwhite {
@@ -455,27 +569,31 @@ nav > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/ex/w_images/01minecraft/배경흰색-수정.png);}
+    background: url(/Woo_ang/w_images/01minecraft/배경흰색-수정.png);
+}
 
 .innerblack {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/ex/w_images/01minecraft//검정배경_ㄲ.png);
-}    
+    background: url(/Woo_ang/w_images/01minecraft//검정배경_ㄲ.png);
+}
 
 .News1200 {
-    width: 1200px;
+    width: 1440px;
     height: 680px;
+    width: auto;
+    height: auto;
     margin: 20px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .News {
-    width: 1440px;
+    width: 1200px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -489,33 +607,37 @@ nav > div{
 
 .News .swiper-button-next {
     position: absolute;
-    top: 260px; 
+    top: 260px;
 }
 .News .swiper-button-prev {
     position: absolute;
     top: 260px;
 }
 
-.News > .swiper-button-next::after {display: none;}
+.News > .swiper-button-next::after {
+    display: none;
+}
 .News > .swiper-button-next {
-    background: url(/ex/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50%/ 74px 74px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50%/ 74px 74px;
     width: 74px;
     height: 74px;
 }
 .News > .swiper-button-next:hover {
-    background: url(/ex/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50%/ 64px 64px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50%/ 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
-      
-.News > .swiper-button-prev::after {display: none;}
+
+.News > .swiper-button-prev::after {
+    display: none;
+}
 .News > .swiper-button-prev {
-    background: url(/ex/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50%/ 74px 74px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50%/ 74px 74px;
     width: 74px;
     height: 74px;
 }
 .News > .swiper-button-prev:hover {
-    background: url(/ex/w_images/01minecraft/버튼_검정좌.png)no-repeat 50% 50%/ 64px 64px;
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정좌.png)no-repeat 50% 50%/ 64px 64px;
     border: 2px solid var(--colorWhite);
     transition: all 0.2s;
 }
@@ -527,7 +649,9 @@ nav > div{
     border-radius: 0%;
 }
 
-.News h2, p {color: var(--colorWhite);}
+.News h2, p {
+    color: var(--colorWhite);
+}
 
 .News > span {
     display: flex;
@@ -544,14 +668,15 @@ nav > div{
     width: 100%;
     height: 300px;
     object-fit: cover;
-}
-
-.News .swiper-slide >img {
     margin: 0 0 25px 0;
     border: 2px solid var(--colorWhite);
     transition: all 0.3s;
 }
-.News .swiper-slide >img:hover{border: 2px solid var(--color2)}
+
+
+.News .swiper-slide > img:hover {
+    border: 2px solid var(--color2)
+}
 
 .News .swiper-slide > span {
     position: absolute;
@@ -561,15 +686,22 @@ nav > div{
     transition: all 0.3s;
     z-index: 1;
 }
+
 .News .swiper-slide > p {
     opacity: 0;
     transition: all 0.5s;
 }
 
-/* 위-중복클래스-아래 */ 
-.News .swiper-slide.swiper-slide-active > img{opacity: 1;}
-.News .swiper-slide.swiper-slide-active > span{opacity: 1;}
-.News .swiper-slide.swiper-slide-active > p {opacity: 1;}
+/* 위-중복클래스-아래 */
+.News .swiper-slide.swiper-slide-active > img {
+    opacity: 1;
+}
+.News .swiper-slide.swiper-slide-active > span {
+    opacity: 1;
+}
+.News .swiper-slide.swiper-slide-active > p {
+    opacity: 1;
+}
 
 /* 최신소식, 개발자픽 공통 스펜 */
 .swiper-slide > span {
@@ -597,27 +729,27 @@ span > h2 {
     display: flex;
     width: 600px;
     height: 600px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 20px 0;
     background: rgba(0, 0, 0, 0.15);
 }
 
-.inner600a > .swiper-slide{
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.inner600a > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pickcard .swiper-slide > span {
     position: absolute;
     left: 75px;
     top: 265px
-} 
+}
 
 .pickcard .swiper-pagination-bullet {
     background: var(--color2);
@@ -637,7 +769,7 @@ span > h2 {
     height: 600px;
     padding: 10px;
     gap: 10px;
-    justify-content:flex-end;
+    justify-content: flex-end;
     flex-wrap: wrap;
     margin: 20px 0 0 0;
     background: rgba(0, 0, 0, 0.15);
@@ -685,45 +817,51 @@ span > h2 {
     height: 200px;
     object-fit: cover;
 }
-.hotbox .up h2 {padding: 15px 0 2px 0;}
-.hotbox .up p {line-height: 12px;}
+.hotbox .up h2 {
+    padding: 15px 0 2px 0;
+}
+.hotbox .up p {
+    line-height: 12px;
+}
 
 .hotbox .up {
     position: relative;
     color: var(--colorWhite);
-    top:-53px;
+    top: -53px;
     width: 100%;
     height: 50px;
-    background:rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     transition: all 0.3s;
 }
 
-/* 위 아래 up호버->p나타남 */
-.hotbox .up p {opacity: 0;}
+/* 위 아래 up호버->p */
+.hotbox .up p {
+    opacity: 0;
+}
 .hotbox .up:hover > p {
     opacity: 1;
-    transition: all 0.2s;}
+    transition: all 0.2s;
+}
 
-/* 이미지커지는거잘라먹기 */
+/* 이미지크기 */
 .hotbox .back {
     width: 200px;
     height: 200px;
     overflow: hidden;
 }
 
-/*  */
-.back:hover img {    
+.back:hover img {
     transform: scale(1.15);
     transition: all 0.3s;
 }
 
-.back:hover .up{
+.back:hover .up {
     position: relative;
     color: var(--colorWhite);
     top: -73px;
     width: 100%;
     height: 70px;
-    background:rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     transition: all 0.2s;
 }
 
@@ -733,7 +871,7 @@ span > h2 {
 }
 
 /*  */
-.inner600b  button {
+.inner600b button {
     width: 100px;
     height: 50px;
 }
@@ -742,18 +880,30 @@ span > h2 {
 footer .inner {
     flex-wrap: wrap;
     justify-content: center;
-    color:var(--colorWhite);
+    color: var(--colorWhite);
 }
 
-footer > h3 {font-size: 15px;}
-.footer-a > a {font-size: 12px;}
+footer > h3 {
+    font-size: 15px;
+}
+.footer-a > a {
+    font-size: 12px;
+}
 
-footer > .box02 a:link {color: #6BC349;}
-footer > .box02 a:visited {color: #6BC349}
-footer > .box02 a:active {color: #fff}
-footer > .box02 a:hover {color: #fff;}
+footer > .box02 a:link {
+    color: #6BC349;
+}
+footer > .box02 a:visited {
+    color: #6BC349
+}
+footer > .box02 a:active {
+    color: #fff
+}
+footer > .box02 a:hover {
+    color: #fff;
+}
 
-.footer-a  {
+.footer-a {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -769,12 +919,12 @@ footer > .box02 a:hover {color: #fff;}
 .box01 > div {
     display: flex;
     gap: 55px;
-} 
+}
 
 .box01 :last-child {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .box01 :nth-child(2) i {
@@ -793,7 +943,7 @@ footer > .box02 a:hover {color: #fff;}
     background: var(--color1);
 }
 .box02-1 {
-    width:400px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -802,14 +952,20 @@ footer > .box02 a:hover {color: #fff;}
     margin: 0 40px 0 0;
 }
 
-.box02-1 > span {font-size: 12px;}
-.box02-1 :last-child {font-size: 12px;}
-.box02-1 :last-child >img {
+.box02-1 > span {
+    font-size: 12px;
+}
+.box02-1 :last-child {
+    font-size: 12px;
+}
+.box02-1 :last-child > img {
     vertical-align: bottom;
     padding: 0 15px;
 }
 
-.box02-1:first-child img {padding: 0 0 0 10px;}
+.box02-1:first-child img {
+    padding: 0 0 0 10px;
+}
 
 
 .box02-2 {
@@ -818,14 +974,18 @@ footer > .box02 a:hover {color: #fff;}
     padding: 0 0 30px 0;
 }
 
-.box02-2 > div h3 {margin: 10px 0 10px 0;}
+.box02-2 > div h3 {
+    margin: 10px 0 10px 0;
+}
 
-.box02-3 {margin: 0 0 20px 40px;}
+.box02-3 {
+    margin: 0 0 20px 40px;
+}
 
 
 .box03 {
     display: flex;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 100px;
     gap: 150px;
@@ -840,8 +1000,1043 @@ footer > .box02 a:hover {color: #fff;}
     gap: 10px;
 }
 
-.box03 :nth-child(2) {
+.box03-2 {
     display: flex;
     gap: 20px;
 }
 
+.gnb ul .도착{
+    display: block;
+}
+.gnb ul .출발{
+    display: block;
+}
+
+.gnb ul .도착.on{
+    background: #6BC349;
+    width: 100px;
+}
+.gnb ul .출발.on{
+    background: #6BC349;
+=======
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
+/* @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css'); */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    /* outline: 1px solid green; */
+    /* background: var(--colorBlack); */
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorWhite: #fff;
+    --colorBlack: #000;
+    --color1: rgba(23, 22, 21, 1);
+    --color1-1: rgba(42, 40, 38, 1);
+    --color1-2: rgba(74, 74, 74, 1);
+    --color2: rgba(59, 133, 38, 1);
+    --color3: rgba(107, 195, 73, 1);
+}
+
+.scrollTopbt {
+    display: none;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.5s;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url(/Woo_ang/w_images/01minecraft/scrollTopbt.png) no-repeat 50% 50% / 35px 35px;
+}
+
+/* .scrollTopbt.on {
+    display: flex;
+} */
+
+.scrollTopbt:hover {
+    border: 2px solid var(--colorWhite);
+}
+
+.inner {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    background: var(--colorBlack);
+}
+
+.inner-up {
+    height: 125px;
+    width: 100%;
+    background: url(/Woo_ang/w_images/01minecraft/배경위.png) repeat;
+}
+.inner-down {
+    height: 120px;
+    width: 100%;
+    background: url(/Woo_ang/w_images/01minecraft/배경아래.png) repeat;
+}
+
+section {
+    flex-direction: column;
+}
+header {
+    flex-direction: column;
+}
+footer {
+    flex-direction: column;
+}
+
+.hamburger {
+    background-repeat: no-repeat;
+    text-align: center;
+    /* margin: 0 auto; */
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a:link {
+    color: #fff;
+}
+a:visited {
+    color: #fff;
+}
+a:active {
+    color: #6BC349;
+}
+a:hover {
+    color: #6BC349;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.Languages, .Languages02 {
+    background: transparent;
+    border: none;
+    color: #fff
+}
+
+.h1-1 > .Languages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Languages02 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Languages i {
+    font-size: 25px;
+}
+.Languages02 i {
+    font-size: 25px;
+}
+
+/* 바닥에서 위로 나올 거기 때문에 바텀0
+    left= xy값
+    
+    height: 0;
+    overflow: hidden;
+    글로벌 높이값 안보이게 처리
+*/
+
+.gloval, .gloval02 {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    background: var(--color1-2);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/* 글로벌on일 때 높이 값을 갖는다. */
+.gloval.on {
+    height: 140px;
+}
+.gloval02.on {
+    height: 140px;
+}
+
+
+.Languages:hover {
+    color: #6BC349;
+}
+.Languages:hover .gloval {
+    display: flex;
+}
+.Languages02:hover {
+    color: #6BC349;
+}
+.Languages02:hover .gloval {
+    display: flex;
+}
+
+.gloval ul {
+    width: 850px;
+    height: auto;
+    gap: 5px;
+    padding: 0 50px 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 20px 0;
+}
+.gloval02 ul {
+    width: 850px;
+    height: auto;
+    gap: 5px;
+    padding: 0 50px 0 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 20px 0;
+}
+
+.gloval li {
+    gap: 5px;
+    width: 100px;
+    height: 21px;
+}
+.gloval02 li {
+    gap: 5px;
+    width: 100px;
+    height: 21px;
+}
+
+
+/* 게임 나브부분 */
+.h1-1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px 15px;
+    gap: 50px;
+}
+
+.h1-1 a:link {
+    color: var(--color2);
+}
+.h1-1 a:visited {
+    color: var(--color2);
+}
+.h1-1 a:active {
+    color: var(--colorWhite);
+}
+.h1-1 a:hover {
+    color: var(--colorWhite);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    background: var(--color1);
+}
+
+.gnbfamily {
+    display: flex;
+    width: 480px;
+    height: 100%;
+    gap: 35px;
+    align-items: center;
+    padding: 0 0 0 30px;
+    left: 0;
+}
+
+.gnbfamily li button {
+    border: 0;
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.gnbfamily li button:hover {
+    color: var(--color3);
+}
+
+.gnbfamily .sub {
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    text-align: start;
+    background: var(--color1-1);
+    transition: all 0.2s;
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.3);
+    height: 0;
+    /*ul(gnb)의 높이 안보이게 처리*/
+    overflow: hidden;
+}
+/* tlfgja */
+
+.gnbfamily .sub li {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.gnbfamily .sub li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* li를 호버하면 a 는 초록색 */
+.gnbfamily li:hover > a {
+    color: #6BC349;
+}
+
+.gnbfamily li:hover .sub {
+    height: 204px;
+    width: 260px;
+    transition: all 0.4s;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+nav .login_start {
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0px 30px 0px 0px;
+}
+
+/* 1-1 게임 배너 부분 */
+/* 230227 */
+.start {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.gnb ul button {
+    /* display: flex; */
+    flex-direction: row;
+    gap: 5px;
+}
+
+.gnb li > button > i {
+    position: relative;
+    top: 3px;
+}
+
+.login_start {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.login_start button {
+    background: var(--color2);
+    width: 124px;
+    height: 44px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorWhite);
+    transition: all 0.1s;
+}
+.login_start button:hover {
+    background: var(--color1-1);
+    width: 124px;
+    height: 44px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorWhite);
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+}
+
+.community {
+    width: 1200px;
+    height: 32px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.gamecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.art01 {
+    height: auto;
+}
+
+.pickcard {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.pickcard .swiper-pagination {
+    position: relative;
+    top: -2px;
+    /* margin: 1px; */
+}
+
+.pickcard h2 {
+    margin: 30px 0 5px 0
+}
+
+
+.pickcard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.3s;
+}
+
+.pickcard img:hover {
+    border: 2px solid var(--color2);
+    transition: all 0.3s;
+}
+
+.pickcard > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.inner1200 button {
+    border: 0px;
+    color: var(--colorWhite);
+    font-size: 20px;
+    font-weight: 700;
+    background: url(/Woo_ang/w_images/01minecraft/초록버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+}
+
+.inner1200 button:hover {
+    border: 0px;
+    background: url(/Woo_ang/w_images/01minecraft/검정버튼밑바탕.png)no-repeat 50% 50% / 100px 45px;
+    transition: all 0.3s;
+    border: 2px solid var(--colorWhite);
+}
+
+
+.inner600a button {
+    position: relative;
+    left: 100px;
+}
+
+
+/* 게임카드버튼호버 */
+
+.gamecard > .swiper-button-next::after {
+    display: none;
+}
+
+.gamecard > .swiper-button-next {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    right: 9%;
+    width: 74px;
+    height: 74px;
+}
+.gamecard > .swiper-button-next:hover {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50% / 64px 64px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
+    right: 9%;
+}
+
+.gamecard > .swiper-button-prev::after {
+    display: none;
+}
+
+.gamecard > .swiper-button-prev {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50% / 74px 74px;
+    position: absolute;
+    left: 9%;
+    width: 74px;
+    height: 74px;
+}
+.gamecard > .swiper-button-prev:hover {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정좌.png) no-repeat 50% 50% / 64px 64px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    position: absolute;
+    left: 9%;
+}
+
+.gamecard > .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+.gamecard > .swiper-wrapper > .swiper-slide > button {
+    position: absolute;
+    z-index: 22;
+    height: 74px;
+    width: 156px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    border: 0;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--color2);
+    color: #fff;
+}
+
+.gamecard > .swiper-wrapper > .swiper-slide > button:hover {
+    position: absolute;
+    z-index: 22;
+    height: 74px;
+    width: 156px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    border: 0;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--color1);
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+    color: #fff;
+}
+
+.gamecard .swiper-pagination {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 35px;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* 최신소식 */
+.inner1200 {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    background: url(/Woo_ang/w_images/01minecraft/배경흰색-수정.png);
+}
+
+.innerwhite {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Woo_ang/w_images/01minecraft/배경흰색-수정.png);
+}
+
+.innerblack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Woo_ang/w_images/01minecraft//검정배경_ㄲ.png);
+}
+
+.News1200 {
+    width: 1440px;
+    height: 680px;
+    width: auto;
+    height: auto;
+    margin: 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.News {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 104px;
+}
+
+.News .swiper-wrapper {
+    margin: 15px 0;
+}
+
+.News .swiper-button-next {
+    position: absolute;
+    top: 260px;
+}
+.News .swiper-button-prev {
+    position: absolute;
+    top: 260px;
+}
+
+.News > .swiper-button-next::after {
+    display: none;
+}
+.News > .swiper-button-next {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록우.png) no-repeat 50% 50%/ 74px 74px;
+    width: 74px;
+    height: 74px;
+}
+.News > .swiper-button-next:hover {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정우.png) no-repeat 50% 50%/ 64px 64px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+}
+
+.News > .swiper-button-prev::after {
+    display: none;
+}
+.News > .swiper-button-prev {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_초록좌.png)no-repeat 50% 50%/ 74px 74px;
+    width: 74px;
+    height: 74px;
+}
+.News > .swiper-button-prev:hover {
+    background: url(/Woo_ang/w_images/01minecraft/버튼_검정좌.png)no-repeat 50% 50%/ 64px 64px;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.2s;
+}
+
+.News .swiper-pagination-bullet {
+    background: var(--color2);
+    width: 45px;
+    height: 15px;
+    border-radius: 0%;
+}
+
+.News h2, p {
+    color: var(--colorWhite);
+}
+
+.News > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.News .swiper-slide > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 0 25px 0;
+    border: 2px solid var(--colorWhite);
+    transition: all 0.3s;
+}
+
+
+.News .swiper-slide > img:hover {
+    border: 2px solid var(--color2)
+}
+
+.News .swiper-slide > span {
+    position: absolute;
+    Top: 265px;
+    Left: 110px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.News .swiper-slide > p {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* 위-중복클래스-아래 */
+.News .swiper-slide.swiper-slide-active > img {
+    opacity: 1;
+}
+.News .swiper-slide.swiper-slide-active > span {
+    opacity: 1;
+}
+.News .swiper-slide.swiper-slide-active > p {
+    opacity: 1;
+}
+
+/* 최신소식, 개발자픽 공통 스펜 */
+.swiper-slide > span {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    background: var(--colorWhite);
+    width: 150px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+span > h2 {
+    display: flex;
+    width: 300px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 개발자픽, 유저핫 */
+.inner600a {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.inner600a > .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickcard .swiper-slide > span {
+    position: absolute;
+    left: 75px;
+    top: 265px
+}
+
+.pickcard .swiper-pagination-bullet {
+    background: var(--color2);
+    width: 45px;
+    height: 15px;
+    border-radius: 0%;
+}
+
+.inner1200 button {
+    width: 100px;
+    height: 50px;
+}
+
+.inner600b {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.inner600b > span {
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.hotbox {
+    font-size: 12px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotbox > div {
+    width: 200px;
+    height: 200px;
+}
+
+.hotbox span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    color: var(--colorBlack);
+    background: #fff;
+    top: -10px;
+    left: 68px;
+}
+
+.hotbox img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.hotbox .up h2 {
+    padding: 15px 0 2px 0;
+}
+.hotbox .up p {
+    line-height: 12px;
+}
+
+.hotbox .up {
+    position: relative;
+    color: var(--colorWhite);
+    top: -53px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
+}
+
+/* 위 아래 up호버->p */
+.hotbox .up p {
+    opacity: 0;
+}
+.hotbox .up:hover > p {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+/* 이미지크기 */
+.hotbox .back {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.back:hover img {
+    transform: scale(1.15);
+    transition: all 0.3s;
+}
+
+.back:hover .up {
+    position: relative;
+    color: var(--colorWhite);
+    top: -73px;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.2s;
+}
+
+.back:hover p {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+/*  */
+.inner600b button {
+    width: 100px;
+    height: 50px;
+}
+
+/*  푸터 */
+footer .inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--colorWhite);
+}
+
+footer > h3 {
+    font-size: 15px;
+}
+.footer-a > a {
+    font-size: 12px;
+}
+
+footer > .box02 a:link {
+    color: #6BC349;
+}
+footer > .box02 a:visited {
+    color: #6BC349
+}
+footer > .box02 a:active {
+    color: #fff
+}
+footer > .box02 a:hover {
+    color: #fff;
+}
+
+.footer-a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box01 {
+    height: 140px;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.box01 > div {
+    display: flex;
+    gap: 55px;
+}
+
+.box01 :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box01 :nth-child(2) i {
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.box02 {
+    align-items: flex-start;
+    padding: 60px 100px 0px 100px;
+    gap: 40px;
+    background: var(--color1);
+}
+.box02-1 {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 40px 0 0;
+}
+
+.box02-1 > span {
+    font-size: 12px;
+}
+.box02-1 :last-child {
+    font-size: 12px;
+}
+.box02-1 :last-child > img {
+    vertical-align: bottom;
+    padding: 0 15px;
+}
+
+.box02-1:first-child img {
+    padding: 0 0 0 10px;
+}
+
+
+.box02-2 {
+    display: flex;
+    gap: 40px;
+    padding: 0 0 30px 0;
+}
+
+.box02-2 > div h3 {
+    margin: 10px 0 10px 0;
+}
+
+.box02-3 {
+    margin: 0 0 20px 40px;
+}
+
+
+.box03 {
+    display: flex;
+    /* position: relative; */
+    width: 100%;
+    height: 100px;
+    gap: 150px;
+    color: #fff;
+    background: rgba(74, 74, 74, 1)
+}
+
+.box03 :nth-child(1) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box03-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.gnb ul .도착{
+    display: block;
+}
+.gnb ul .출발{
+    display: block;
+}
+
+.gnb ul .도착.on{
+    background: #6BC349;
+    width: 100px;
+}
+.gnb ul .출발.on{
+    background: #6BC349;
+>>>>>>> 4825fc604952e9db9288ce656ffdeaf8a59a8e7a
+}
