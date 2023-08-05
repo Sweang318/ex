@@ -877,18 +877,18 @@ linear-gradient(0deg, var(--colorBlack) 7.24%, rgba(0, 0, 0, 0) 31.12%);
 .popup-image01 {
     width: 100%;
     height: 350px;
-    background: url(/woo_ang/w_images/01minecraft/Mpaire01.png) 
+    background: url(https://github.com/sweauxui/Woo_ang/assets/125528967/80ef52db-c414-43a6-ae61-20b86d6f6fe3) 
     no-repeat 50% 50%/ cover;
 }
 .popup-image02 {
     width: 100%;
     height: 350px;
-    background: url(/woo_ang/w_images/01minecraft/Mpaire02.png) no-repeat 50% 50%/ cover;
+    background: url(https://github.com/sweauxui/Woo_ang/assets/125528967/5998617a-11f1-4a0e-aa81-b5a1a1704d0f) no-repeat 50% 50%/ cover;
 }
 .popup-image03 {
     width: 100%;
     height: 350px;
-    background: url(/woo_ang/w_images/01minecraft/Mpaire03.png) no-repeat 50% 50%/ cover;
+    background: url(https://github.com/sweauxui/Woo_ang/assets/125528967/546b11d2-b1f0-469f-b8e5-90c65a01a6bc) no-repeat 50% 50%/ cover;
 }
 
 
