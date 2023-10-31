@@ -641,7 +641,7 @@ a {
 .clonewebsite-content {
     display: flex;
     width: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .clonewebsite-content>div:nth-of-type(1) {
@@ -675,7 +675,8 @@ a {
 .clonewebsite-wrap {
     display: flex;
     flex-direction: column;
-    width: 625px
+    width: 625px;
+    cursor: pointer;    
 }
 
 .clonewebsite-content-tab {
